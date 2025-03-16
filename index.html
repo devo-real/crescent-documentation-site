@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crescent OS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Crescent OS, by devoReal</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#commands">Commands</a></li>
+                <li><a href="#filesystem">File System</a></li>
+                <li><a href="#miv">MIV Editor</a></li>
+                <li><a href="#hardware">Hardware Info</a></li>
+                <li><a href="#source">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Crescent OS is a lightweight operating system built using the COSMOS (C# Open Source Managed Operating System) framework. It provides a minimalistic environment with basic command-line utilities and a simple file system. It is a modified version of a past unavailable COSMOS project called 'VNU', which is made by the same developer as Crescent.</p>
+        </section>
+
+        <section id="commands">
+            <h2>Commands</h2>
+            <p>Crescent OS supports a variety of commands for file management, system operations, and more. Below is a list of available commands:</p>
+            <ul>
+                <li><code>dir</code> - List files and directories in the current directory.</li>
+                <li><code>echo [text]</code> - Print text to the console.</li>
+                <li><code>cd [path]</code> - Change the current directory.</li>
+                <li><code>md [path]</code> - Create a new directory.</li>
+                <li><code>rd [path]</code> - Remove a directory.</li>
+                <li><code>rdf [file]</code> - Remove a file.</li>
+                <li><code>rdrf [path]</code> - Remove a directory and it's contents recursively.</li>
+                <li><code>touch [file]</code> - Create a new file.</li>
+                <li><code>miv</code> - Open the MIV text editor.</li>
+                <li><code>shutdown</code> - Shut down the system.</li>
+                <li><code>reboot</code> - Reboot the system.</li>
+                <li><code>clear</code> - Clear the console screen.</li>
+                <li><code>vnu-fetch</code> - Display system information.</li>
+            </ul>
+        </section>
+
+        <section id="filesystem">
+            <h2>File System</h2>
+            <p>Crescent OS uses a simple file system managed by the COSMOS VFS (Virtual File System). The root directory is located at <code>0:\</code>. The file system supports basic operations such as creating, deleting, and listing files and directories.</p>
+            <h3>File System Commands</h3>
+            <ul>
+                <li><code>dir</code> - List files and directories.</li>
+                <li><code>cd [path]</code> - Change directory.</li>
+                <li><code>md [path]</code> - Create a directory.</li>
+                <li><code>rd [path]</code> - Remove a directory.</li>
+                <li><code>rdf [file]</code> - Remove a file.</li>
+                <li><code>touch [file]</code> - Create a file.</li>
+                <li><code>rdrf [path]</code> - Remove a directory and it's contents recursively.</li>
+            </ul>
+        </section>
+
+        <section id="miv">
+            <h2>MIV Editor</h2>
+            <p>MIV (Minimalistic Vi) is a simple text editor included in Crescent OS. It allows users to create and edit text files directly from the command line.</p>
+            <h3>MIV Commands</h3>
+            <ul>
+                <li><code>i</code> - Enter insert mode to start typing.</li>
+                <li><code>:wq</code> - Save and exit.</li>
+                <li><code>:q</code> - Exit without saving.</li>
+                <li><code>:help</code> - Display help information.</li>
+            </ul>
+        </section>
+
+        <section id="hardware">
+            <h2>Hardware Information</h2>
+            <p>Crescent OS provides basic hardware information through the <code>vnu-fetch</code> command. This includes details about the CPU, RAM, and disk space.</p>
+            <h3>Hardware Info Example</h3>
+            <pre>
+OS: Crescent OS
+
+CPU: Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz
+RAM: 256 / 256MB
+
+Disk: 510 free / 511 MB
+Filesystem: FAT32 (File Allocation Table)
+
+Kernel: crescent-kernel-v1
+pc@user: crescent-OS@root
+            </pre>
+        </section>
+        <section id="source">
+            <h2>GitHub Code</h2>
+            <p>Below is the link to the GitHub page where you can find the source code for Crescent OS.</p>
+            <p>You can also find the code to VNU there as well.</p>
+            <a href="https://github.com/devo-real/crescent-os">Crescent OS - GitHub, devoReal</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Crescent OS. All rights reserved.</p>
+    </footer>
+</body>
+</html>
